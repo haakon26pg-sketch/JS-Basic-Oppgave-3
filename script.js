@@ -71,7 +71,7 @@ hobbies: ["boxing", "wrestling", "mma", "coding"]
 name: "Otto",
 male: true,
 age: 36,
-hobbies: ["movies", "cinema", "music", "coding"]
+hobbies: ["movies", "cinema", "music"]
 },
 {
 name: "Annabelle",
@@ -144,8 +144,17 @@ diceRoller(5, 20) skal returnere et array med 5 tilfeldige tall fra 1-20.
 
 ******************************************************************************/
 
-// Skriv koden for oppgave 2 her
+function diceRoller(antall) {
+  const resultater = [];
 
+  for (let i = 0; i < antall; i++) {
+    const kast = Math.floor(Math.random() * 20) + 1;
+
+    resultater.push(kast);
+  }
+  return resultater;
+}
+console.log(diceRoller(4));
 /******************************************************************************
 3.
 

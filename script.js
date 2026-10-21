@@ -180,7 +180,18 @@ skal returnere:
 
 ******************************************************************************/
 
-// Skriv koden for oppgave 3 her
+const text = [" thIS", "teXt  ", " nEeds ", "to", "BE", "cleANED   ", " Up"];
+
+function textFix(array) {
+  for (let i = 0; i < array.length; i++) {
+    array[i] = array[i].trim().toLowerCase();
+    console.log(`${text}`);
+  }
+
+  return array;
+}
+
+console.log(textFix(text));
 
 /******************************************************************************
 4.
